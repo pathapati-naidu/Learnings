@@ -70,3 +70,7 @@ print(a,b)
 # The intersection_update() method is different from the intersection() method, because the intersection() method returns a new set,
 # without the unwanted items, and the intersection_update() method removes the unwanted items from the original set.
 
+x.intersection_update(y,a,b)
+print(x)
+
+#

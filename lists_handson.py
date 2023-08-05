@@ -1,5 +1,8 @@
 # a=["JAI BALAYYA",["Mahesh","Anil","PSPK","NTR"]]
-# b=list()
+from Object_oriented.classes import MyClass
+export_class=MyClass("Pathapati Mahesh Kumar",2024,"December")
+export_class.study_plans()
+
 #
 # # for j in range(len(a)):
 # #     # print(a[j])
@@ -37,14 +40,16 @@
 
 #2d lists
 
-fruits=["Orange","Apple","Kiwi"]
-Biryani=["Dum","chicken","Mutton"]
-desserts=["Cake","Lassi","Gulab Jamun"]
-
-food=[fruits,Biryani,desserts]
-for i in range(len(food)):
-    for j in range(len(food[i])):
-        print(food[j][0])
+# class
+# def personal_info(MyClass)
+# fruits=["Orange","Apple","Kiwi"]
+# Biryani=["Dum","chicken","Mutton"]
+# desserts=["Cake","Lassi","Gulab Jamun"]
+#
+# food=[fruits,Biryani,desserts]
+# for i in range(len(food)):
+#     for j in range(len(food[i])):
+#         print(food[j][0])
 
 
 
