@@ -42,11 +42,17 @@ class MyClass:
             "Domain ":self.domain
         })
         print("Temp dictionary after copying :",temp_dict)
-        new_dict=dict(temp_dict)
+        test_dict=dict(temp_dict)
 
-        new_dict.popitem()
-        new_dict.pop("Country")
-        print(new_dict)
+        # Using the popitem() method it will remove the last inserted key value pair from the dictionary
+        test_dict.popitem()
+        test_dict.pop("Country")
+        print(test_dict)
+        test_dict.setdefault("Country","Germany")
+
+        # clearing the test_dict using the clear () method
+        test_dict.clear()
+        print("Test-dict after setting the new key in to it",test_dict)
 
 
 
