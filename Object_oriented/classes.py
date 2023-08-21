@@ -1,5 +1,10 @@
+import csv
+
 class MyClass:
-    def __init__(self,name:str,year:int,month:str,date:str,age:int,country:str,domain:str):
+    courses=["AI","CS","Data Science","Data Analytics"]
+    list_all_values=[]
+
+    def __init__(self,name:str,year:int,month:str,date:str,age:int,country:str,domain:st):
         self.name = name
         self.year = year
         self.month = month
@@ -7,15 +12,22 @@ class MyClass:
         self.country=country
         self.date=date
         self.domain=domain
+        MyClass.list_all_values.append(self)
+
     def study_plans(self):
         print(f"My name is {self.name} and Im going to USA on {self.date}/{self.month}/{self.year}")
         if self.year<2025:
             print("Best option you have opted to go there and do the education Now")
+
     def alternative_plans(new):
         if new.year>2025:
             print(f"{new.name} please go for switching the job roles it may offer you around 17 LPA")
         else:
             print(f"{new.name} you did it never stop working hard for your goal it may take time but you will achieve what you want")
+
+    def course_list(self):
+        return self.courses
+    
     def create_dict(self):
         new_dict={
             "Name":self.name,
@@ -53,6 +65,21 @@ class MyClass:
         # clearing the test_dict using the clear () method
         test_dict.clear()
         print("Test-dict after setting the new key in to it",test_dict)
+
+    # Creating the class Method which will create the Objects/instances automatically we based on the vlues in the CSV
+    @classmethod
+    def instance_automatically(cls):
+        with open('text.csv','r',) as f:
+            reader=csv.DictReader(f)
+            read_values=list(reader)
+            print(read_values)
+            for item in read_values:
+                MyClass(name=item.get('name'),year=int(item.get('year')),month=item.get('month'),date=item.get('date'),age=int(item.get('age')),country=item.get('country'),domain=item.get('domain'))
+
+    
+    # Magic Method 2 Which will be helpful to Customize the object name and can be useful to identify the instances/objects easily
+    def __repr__(self):
+        return f"MyClass({self.name},{self.domain})"
 
 
 
