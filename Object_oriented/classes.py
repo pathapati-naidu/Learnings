@@ -4,7 +4,7 @@ class MyClass:
     courses=["AI","CS","Data Science","Data Analytics"]
     list_all_values=[]
 
-    def __init__(self,name:str,year:int,month:str,date:str,age:int,country:str,domain:st):
+    def __init__(self,name:str,year:int,month:str,date:str,age:int,country:str,domain:str):
         self.name = name
         self.year = year
         self.month = month
@@ -86,7 +86,7 @@ class MyClass:
 
 
 #Create an object where we can able to access the methods in side the class
-# det_name=MyClass()
-# print(det_name.study_plans("Mahesh Kumar",2024,"December"))
-# print(det_name.study_plans("Vidhya sagar",2026,"August"))
-# print(det_name)---->object name
+det_name=MyClass("Mahesh",2024,"August","16/08/2024",24,"Gernmany","Data Science")
+print(det_name.study_plans())
+print(det_name.study_plans())
+print(det_name)#---->object name
