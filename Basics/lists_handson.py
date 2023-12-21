@@ -1,7 +1,11 @@
 # a=["JAI BALAYYA",["Mahesh","Anil","PSPK","NTR"]]
 from Object_oriented.classes import MyClass
-export_class=MyClass("Pathapati Mahesh Kumar",2024,"December")
-export_class.study_plans()
+
+
+export_class=MyClass("Pathapati Mahesh Kumar",2024,"December","16",23,"USA","Python Developer")
+# export_class.study_plans()
+# export_class.alternative_plans()
+export_class.create_dict()
 
 #
 # # for j in range(len(a)):
