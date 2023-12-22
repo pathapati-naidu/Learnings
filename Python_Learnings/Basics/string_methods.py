@@ -97,4 +97,81 @@ print(txt.encode(encoding="ascii",errors="namereplace"))#Replaces the character 
 print(txt.encode(encoding="ascii",errors="replace"))#Replaces the character with the question mark which is not able to encode
 print(txt.encode(encoding="ascii",errors="xmlcharrefreplace"))#Replaces the character with the xml character
 
+# Fomatting syles
+# 1.<:--->Left aligns the results based on the no of spaces in the below example 20 is the number so 20 tabspaces will be
 
+text="My Name is {:<20}"
+print(text.format("Mahesh"))
+
+#2. :> ---->Used to align the result to the right side with in the available space
+news="Hello good afternoon this is {:>20}"
+print(news.format("Mahesh"))
+
+#:^ center aligns the result with in the available space
+news="Hello {:^10} welcome to Germany"
+print(news.format("Mahesh"))
+
+#:=   -->Aligns the sign to the left most position
+
+news="This is a {:20} Number"
+print(news.format(-30))
+# : -->adds an extra space before the positive number and use a - before the negative number to add the extra space
+text="I always like {: 30} Numbers"
+print(text.format(30))
+
+#:+ --->use a plus symbol to indicate whether the results are positive or negative
+
+text="I always like {:+14} Numbers"
+print(text.format(-30))
+
+
+# :, --->	Use a comma as a thousand separator
+# :_  -->used underscore as a thousand seperator
+
+# example:
+text="My dream is to earn {:,}"
+print(text.format(1000000000000000))
+text="My dream is to earn {:_}"
+print(text.format(1000000000000000))
+
+# :c  -->Converts the value in to a corresponding unicode character
+text="I always like {:c} Numbers"
+print(text.format(110))
+# :b -->Converts the value in to the Binary format
+
+text="THe Binary Value of {value} is {value:b}"
+print(text.format(value=20))
+
+# :d  -->Converts the value in to the decimal format
+text="THe Decimal Value of {value} is {value:d}"
+print(text.format(value=0b10))
+
+# :e --> converts the given value in to the scientific format in lower case
+text="New number format is {:e}"
+print(text.format(1.2))
+
+# :E --> converts the given value in to the scientific format in Uppercase case
+text="New number format is {:E}"
+print(text.format(1.2))
+
+# :f--->.2f will set the limit of the decimal points to 2 Fix point number format-->This will be used to restrict the No of decimal points appearance
+text="I want to convert the {num} to fixed decimal point as {num:.2f}"
+print(text.format(num=20.23456))
+# :F Fix point number format, in uppercase format (show inf and nan as INF and NAN)
+x = float('inf')
+txt = "The price is {:F} dollars."
+print(txt.format(x))
+
+#same example, but with a lower case f:
+txt = "The price is {:f} dollars."
+print(txt.format(x))
+
+
+
+# :g		General format
+# :G		General format (using a upper case E for scientific notations)
+# :o		Octal format
+# :x		Hex format, lower case
+# :X		Hex format, upper case
+# :n		Number format
+# :%		Percentage format
