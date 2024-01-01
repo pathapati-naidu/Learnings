@@ -1,3 +1,5 @@
+from
+
 Name="Anil Kumar"
 
 print("FIRST NAME",Name[:6])
