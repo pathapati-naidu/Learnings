@@ -1,7 +1,7 @@
 """
 **Kwargs(Keyword Arguments)
 
-This Parameter will pass all the arguments in to a dictionary. So that function can accept a varying amount of keyword arguments
+This Parameter will pass all the arguments in to a dictionary. So that function can accept a varying amount of keyword arguments.....
 """
 
 # Example
