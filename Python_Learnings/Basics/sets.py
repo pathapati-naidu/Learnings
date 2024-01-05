@@ -4,33 +4,35 @@
 # Sets cannot have two items with the same value.
 # Set is represented as {}
 
-# fruits={"Mahesh","Anil","Onkar","Manas","Prabhat"}
+fruits={"Mahesh","Anil","Onkar","Manas","Prabhat"}
 #
 # print(fruits)
 
 # sets Methods
-# add,copy,pop,clear,union,discard,difference,difference_update,discard,intersection,intersection_update,isdisjoint,issubset,issuperset,remove,symmetric_difference,symmetric_difference_update,update
+# add,copy,pop,clear,union,discard,difference,difference_update,discard,intersection,
+# intersection_update,isdisjoint,
+# issubset,issuperset,remove,symmetric_difference,symmetric_difference_update,update
 
 # # add()
 # # ---------we can add the new items in to the set once the set is created  so using the add() mthod we can add the items in to the set--
 #
-# print(fruits.add("Maaaaaaaaaaaaahi"))
-# # ---->Duplicate values are not allowed and also unordered
-# print(fruits)
+print(fruits.add("Maaaaaaaaaaaaahi"))
+# ---->Duplicate values are not allowed and also unordered
+print(fruits)
 #
-# temp_set={"Mahesh","Manas","Onkar","Ankit","Prabhat","Adil"}
-# new_set=temp_set.copy()
-# print("New SET using the COPY()",new_set)
-# temp_set.clear()
-# print("Cleared Set using the Clear()",temp_set)--Returns the empty Set
+temp_set={"Mahesh","Manas","Onkar","Ankit","Prabhat","Adil"}
+new_set=temp_set.copy()
+print("New SET using the COPY()",new_set)
+temp_set.clear()
+print("Cleared Set using the Clear()",temp_set)#--Returns the empty Set
 
 # difference()--->this method is used to compare two sets
 
-# set_1={"Amazon","Google","Persistent","Infosys"}
-# set_2={"MaheshIL","OIL","MasterIS","AMAZON","GOOGLE","Persistent","Infosys"}
-# final_set=set_1.difference(set_2)
-# print(set_1)
-# print("COMPARED SET ELEMENTS",final_set)
+set_1={"Amazon","Google","Persistent","Infosys"}
+set_2={"MaheshIL","OIL","MasterIS","Amazon","Google","Persistent","Infosys"}
+final_set=set_2.difference(set_1)
+print(final_set)
+print("COMPARED SET ELEMENTS",final_set)
 #
 # # difference_update()
 # # The difference_update() method removes the items that exist in both sets.
@@ -56,12 +58,12 @@
 # intersection()
 # -->returns the common elements from all the sets
 x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft","banana","apple"}
-a = {"apple", "banana", "cherry"}
-b = {"google", "microsoft", "apple","banana", "cherry"}
+y = {"goomhbgle", "mickbrosoft","banana","apkjple"}
+a = {"appjle", "banana", "hk"}
+b = {"goohjgle", "microsokft", "apphbjle","banana", "cherrb my"}
 z = x.intersection(y,a,b)
-print(a,b)
-# print(z)
+# print(a,b)
+print(z)
 
 
 # intersection_update()
@@ -70,7 +72,6 @@ print(a,b)
 # The intersection_update() method is different from the intersection() method, because the intersection() method returns a new set,
 # without the unwanted items, and the intersection_update() method removes the unwanted items from the original set.
 
-x.intersection_update(y,a,b)
+z=x.intersection_update(y,a,b)
 print(x)
-
-#
+# print(z)

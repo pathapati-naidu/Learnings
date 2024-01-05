@@ -36,6 +36,9 @@ isdigit()--->If the entered string has all the digits then it returns True.
 
 strip()-->Used to remove the space from the start and the end of the string.
 
+split()-->The split() method returns a list where the text between the specified separator
+becomes the list items.
+
 encode()-->Used to encode the part of string in to the required format.
 
 isalpha()-->returns True if the string has all the characters with out any special characters in the string.
@@ -87,6 +90,10 @@ print("strip() :",name.strip())
 
 #isalpha()
 print("isalpha() :",name.isalpha())
+
+# split()
+new_design="My Name is Mahesh, and Im from from Chittoor"
+print("split()",new_design.split(" "))
 
 # encode()
 txt = "My name is Ståle"

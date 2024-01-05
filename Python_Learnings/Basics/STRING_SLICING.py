@@ -1,3 +1,5 @@
+from
+
 Name="Anil Kumar"
 
 print("FIRST NAME",Name[:6])
@@ -22,3 +24,8 @@ print("Extracted website Name :",r[0])
 
 Slice=slice(8,-4)
 print("USING THE SLICE() METHOD :",website[Slice])
+
+
+# String slicing
+name="Mahesh Kumar"
+print(name[(len(name)//2):len(name)].strip())

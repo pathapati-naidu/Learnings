@@ -1,4 +1,4 @@
-from Object_oriented.classes import MyClass
+from Python_Learnings.Object_oriented.classes import MyClass
 
 #Creating the instance of the class and trying to access all the methods in it
 # instance1=MyClass("P Mahesh Kumar",2024,"September","24-08-2024",24,"Germany","Data scientist")
