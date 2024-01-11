@@ -76,7 +76,12 @@ class MyClass:
             for item in read_values:
                 MyClass(name=item.get('name'),year=int(item.get('year')),month=item.get('month'),date=item.get('date'),age=int(item.get('age')),country=item.get('country'),domain=item.get('domain'))
 
-    
+    @staticmethod
+    def method_stat(name,age):
+        return "Hi my name is {name} and I'm {age} years old".format(name=name,age=age)
+
+
+
     # Magic Method 2 Which will be helpful to Customize the object name and can be useful to identify the instances/objects easily
     def __repr__(self):
         return f"MyClass({self.name},{self.domain})"
@@ -88,5 +93,11 @@ class MyClass:
 #Create an object where we can able to access the methods in side the class
 det_name=MyClass("Mahesh",2024,"August","16/08/2024",24,"Gernmany","Data Science")
 print(det_name.study_plans())
-print(det_name.study_plans())
+print(det_name.list_all_values)
 print(det_name)#---->object name
+print(det_name.instance_automatically())
+print(det_name.method_stat("P Mahesh Kumar",24))
+
+
+# type checking
+
