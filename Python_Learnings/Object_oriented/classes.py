@@ -72,7 +72,7 @@ class MyClass:
         with open('text.csv','r',) as f:
             reader=csv.DictReader(f)
             read_values=list(reader)
-            print(read_values)
+            # print(read_values)
             for item in read_values:
                 MyClass(name=item.get('name'),year=int(item.get('year')),month=item.get('month'),date=item.get('date'),age=int(item.get('age')),country=item.get('country'),domain=item.get('domain'))
 
@@ -89,14 +89,14 @@ class MyClass:
 
 
 
-
+MyClass.instance_automatically()
 #Create an object where we can able to access the methods in side the class
 det_name=MyClass("Mahesh",2024,"August","16/08/2024",24,"Gernmany","Data Science")
 print(det_name.study_plans())
 print(det_name.list_all_values)
-print(det_name)#---->object name
+print("det---Name",det_name)#---->object name
 print(det_name.instance_automatically())
-print(det_name.method_stat("P Mahesh Kumar",24))
+print(det_name.method_stat("ANIL",24))
 
 
 # type checking
