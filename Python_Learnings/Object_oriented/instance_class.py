@@ -20,7 +20,6 @@ from Python_Learnings.Object_oriented.classes import MyClass
 # instance5=MyClass("P Renu",2024,"OCTOBER","20-10-2035",24,"Germany","Parents")
 # instance6=MyClass("P Bujji",2024,"OCTOBER","20-10-2035",24,"Germany","Parents")
 # instance5=MyClass("P Chandana",2024,"OCTOBER","20-10-2035",24,"Germany","Sister")
-# instance6=MyClass("G Bena",2024,"OCTOBER","20-10-2035",24,"Germany","Friend")
 # instance2.courses.append(["Embedded","ML"])
 
 # for instance in MyClass.list_all_values:
