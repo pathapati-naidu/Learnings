@@ -72,7 +72,7 @@ class MyClass:
         with open('text.csv','r',) as f:
             reader=csv.DictReader(f)
             read_values=list(reader)
-            # print(read_values)
+            print(read_values)
             for item in read_values:
                 MyClass(name=item.get('name'),year=int(item.get('year')),month=item.get('month'),date=item.get('date'),age=int(item.get('age')),country=item.get('country'),domain=item.get('domain'))
 
