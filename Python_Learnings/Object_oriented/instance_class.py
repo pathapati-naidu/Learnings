@@ -1,4 +1,4 @@
-from Python_Learnings.Object_oriented.classes import MyClass
+from Python_Learnings.Object_oriented.classes import RefreshingClass
 
 #Creating the instance of the class and trying to access all the methods in it
 # instance1=MyClass("P Mahesh Kumar",2024,"September","24-08-2024",24,"Germany","Data scientist")
@@ -29,6 +29,6 @@ from Python_Learnings.Object_oriented.classes import MyClass
 
 # Using the class method creating the instances or objects
 
-MyClass.instance_automatically()
+RefreshingClass.instance_automatically()
 
-print("CUSTOMIZING THE INSTANCE NAMES WHICH WILL BE USEFUL FOR THE IDENTIFICATION USING THE MAGIC METHOD '__repr__()'",MyClass.list_all_values)
+print("CUSTOMIZING THE INSTANCE NAMES WHICH WILL BE USEFUL FOR THE IDENTIFICATION USING THE MAGIC METHOD '__repr__()'",RefreshingClass.list_all_values)

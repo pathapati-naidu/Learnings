@@ -182,3 +182,21 @@ print(txt.format(x))
 # :X		Hex format, upper case
 # :n		Number format
 # :%		Percentage format
+
+print("-------------------------------------------------------------------------")
+name="Mahesh"
+
+"""---------------------------------------------dir()--------------------------
+This method is useful to get information about the possible methods
+ that we can use on top of the value that we give
+ 
+"""
+print(dir(60))
+"""-------------------------------help()----------------------------------------"""
+"""
+    help()---> This method is used to get the detailed information about the each methods
+    if we just give he type then it will give all the methods description. 
+    If we provide only one particular method then it will give the information about that only 
+"""
+
+print(help(list.pop))

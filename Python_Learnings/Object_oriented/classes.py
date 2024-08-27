@@ -1,6 +1,6 @@
 import csv
 
-class MyClass:
+class RefreshingClass:
     courses=["AI","CS","Data Science","Data Analytics"]
     list_all_values=[]
 
@@ -12,7 +12,7 @@ class MyClass:
         self.country=country
         self.date=date
         self.domain=domain
-        MyClass.list_all_values.append(self)
+        RefreshingClass.list_all_values.append(self)
 
     def study_plans(self):
         print(f"My name is {self.name} and Im going to USA on {self.date}/{self.month}/{self.year}")
@@ -74,7 +74,7 @@ class MyClass:
             read_values=list(reader)
             print(read_values)
             for item in read_values:
-                MyClass(name=item.get('name'),year=int(item.get('year')),month=item.get('month'),date=item.get('date'),age=int(item.get('age')),country=item.get('country'),domain=item.get('domain'))
+                RefreshingClass(name=item.get('name'),year=int(item.get('year')),month=item.get('month'),date=item.get('date'),age=int(item.get('age')),country=item.get('country'),domain=item.get('domain'))
 
     @staticmethod
     def method_stat(name,age):
@@ -89,15 +89,15 @@ class MyClass:
 
 
 
-MyClass.instance_automatically()
+RefreshingClass.instance_automatically()
 #Create an object where we can able to access the methods in side the class
-det_name=MyClass("Mahesh",2024,"August","16/08/2024",24,"Gernmany","Data Science")
-print(det_name.study_plans())
+det_name=RefreshingClass("Mahesh",2024,"August","16/08/2024",24,"Gernmany","Data Science")
+print(type(det_name.study_plans()))
 print(det_name.list_all_values)
-print("det---Name",det_name)#---->object name
-print(det_name.instance_automatically())
-print(det_name.method_stat("ANIL",24))
+# print("det---Name",det_name)#---->object name
+print(type(det_name.instance_automatically()))
+# print(det_name.method_stat("ANIL",24))
 
-
+print(type(det_name))
 # type checking
 

@@ -23,12 +23,8 @@ for i in range(rows):
 
 #LOOP CONTROL STATEMENTS
 #continue
-
-
 fruits=["APPLE","BANANA","ORANGE","PINEAPPLE"]
-
 vegetables=["Carrot","Brinjal","Drumsticks"]
-
 for i in fruits:
     if i=="PINEAPPLE":
         for j in vegetables:
