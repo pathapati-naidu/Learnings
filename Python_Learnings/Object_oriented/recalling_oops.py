@@ -141,9 +141,9 @@ class csvReader:
                 csvReader(i.get("name"),i.get('country'),i.get('domain'))
     def check_dtype(self):
         if isinstance(self.number,int):
-            print("Yes the Number is Interger")
+            print("Yes the Number is Integer")
         else:
-            print("Not an interger Number")
+            print("Not an integer Number")
     def __repr__(self):
         return f"Person({self.name},{self.country})"
 # print(csvReader.get_details())

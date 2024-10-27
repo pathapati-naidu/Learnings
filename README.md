@@ -1,1 +1,1 @@
-# ReactProject
+# Python learnings
